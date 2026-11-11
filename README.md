@@ -1,5 +1,9 @@
 # skill-sets
 
+[![License: MIT](https://img.shields.io/github/license/ykurt52/skill-sets?color=blue)](LICENSE)
+[![Sponsor](https://img.shields.io/badge/Sponsor-%E2%9D%A4-ea4aaa?logo=githubsponsors&logoColor=white)](https://github.com/sponsors/ykurt52)
+[![Claude Code plugin marketplace](https://img.shields.io/badge/Claude_Code-plugin_marketplace-D97757?logo=claude&logoColor=white)](#install)
+
 Claude Code skills for hardware work, a git guardrail hook, and a small set
 of general skills from mattpocock/skills. Each skill is packaged as its own
 plugin, so you install only the ones you need.
