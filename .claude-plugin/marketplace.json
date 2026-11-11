@@ -4,7 +4,7 @@
     "name": "ykurt52"
   },
   "metadata": {
-    "description": "Engineering skills for hardware, firmware and FPGA work. Each skill is a separate plugin."
+    "description": "Engineering skills for hardware work, plus a git guardrail hook and a curated set of general skills. Each skill is a separate plugin."
   },
   "plugins": [
     {
@@ -41,6 +41,76 @@
       "description": "Bilingual (EN/TR) commit messages and Redmine descriptions for Altium hardware repos, with work hour estimate.",
       "category": "hardware",
       "tags": ["altium", "commit", "redmine"]
+    },
+    {
+      "name": "git-guardrails",
+      "source": "./plugins/tooling/git-guardrails",
+      "description": "PreToolUse hook that lets the agent run read-only git commands only. Commit, push, checkout, reset and every other write is blocked in the Bash and PowerShell tools.",
+      "category": "tooling",
+      "tags": ["git", "hook", "safety", "guardrail"]
+    },
+    {
+      "name": "grilling",
+      "source": "./plugins/mattpocock/grilling",
+      "description": "Interview that stress-tests a plan or design in numbered rounds, each question with a recommended answer, until nothing is left assumed.",
+      "category": "productivity",
+      "tags": ["planning", "design", "interview", "mattpocock"]
+    },
+    {
+      "name": "handoff",
+      "source": "./plugins/mattpocock/handoff",
+      "description": "Compact the current conversation into a handoff document so a fresh session can continue the work.",
+      "category": "productivity",
+      "tags": ["handoff", "session", "context", "mattpocock"]
+    },
+    {
+      "name": "writing-for-agents",
+      "source": "./plugins/mattpocock/writing-for-agents",
+      "description": "Reference for writing documents agents read: skills, CLAUDE.md and AGENTS.md.",
+      "category": "productivity",
+      "tags": ["skills", "claude-md", "writing", "mattpocock"]
+    },
+    {
+      "name": "wait-what",
+      "source": "./plugins/mattpocock/wait-what",
+      "description": "The last answer did not land: make the agent re-explain it in plain words.",
+      "category": "productivity",
+      "tags": ["explain", "clarity", "mattpocock"]
+    },
+    {
+      "name": "to-questionnaire",
+      "source": "./plugins/mattpocock/to-questionnaire",
+      "description": "Turn a decision you cannot answer alone into a questionnaire for someone else to fill in.",
+      "category": "productivity",
+      "tags": ["questionnaire", "decision", "mattpocock"]
+    },
+    {
+      "name": "diagnosing-bugs",
+      "source": "./plugins/mattpocock/diagnosing-bugs",
+      "description": "Diagnosis loop for hard bugs and performance regressions: build a tight reproduction, form hypotheses, measure, then fix.",
+      "category": "engineering",
+      "tags": ["debug", "bug", "performance", "mattpocock"]
+    },
+    {
+      "name": "research",
+      "source": "./plugins/mattpocock/research",
+      "description": "Research a question against primary sources in a background agent and save the findings as a Markdown file.",
+      "category": "engineering",
+      "tags": ["research", "docs", "sources", "mattpocock"]
+    },
+    {
+      "name": "code-review",
+      "source": "./plugins/mattpocock/code-review",
+      "description": "Review the changes since a commit, branch or tag against the repo's coding standards and against the originating spec, in two parallel subagents.",
+      "category": "engineering",
+      "tags": ["review", "code-review", "diff", "mattpocock"]
+    },
+    {
+      "name": "codebase-design",
+      "source": "./plugins/mattpocock/codebase-design",
+      "description": "Shared vocabulary for designing deep modules: small interfaces, hidden implementation, and where the seams go.",
+      "category": "engineering",
+      "tags": ["design", "architecture", "modules", "mattpocock"]
     }
   ]
 }

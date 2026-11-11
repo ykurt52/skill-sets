@@ -1,0 +1,15 @@
+{
+  "name": "wait-what",
+  "version": "1.3.2",
+  "description": "The last answer did not land: make the agent re-explain it in plain words.",
+  "license": "MIT",
+  "author": {
+    "name": "Matt Pocock",
+    "url": "https://github.com/mattpocock"
+  },
+  "homepage": "https://github.com/mattpocock/skills",
+  "keywords": [
+    "explain",
+    "clarity"
+  ]
+}

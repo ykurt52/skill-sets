@@ -1,0 +1,10 @@
+{
+  "name": "git-guardrails",
+  "version": "0.1.0",
+  "description": "PreToolUse hook that lets the agent run read-only git commands only. Commit, push, checkout, reset and every other write is blocked in the Bash and PowerShell tools.",
+  "license": "MIT",
+  "author": {
+    "name": "ykurt52"
+  },
+  "keywords": ["git", "hook", "safety", "guardrail"]
+}

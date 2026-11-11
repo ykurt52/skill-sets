@@ -1,0 +1,16 @@
+{
+  "name": "handoff",
+  "version": "1.3.2",
+  "description": "Compact the current conversation into a handoff document so a fresh session can continue the work.",
+  "license": "MIT",
+  "author": {
+    "name": "Matt Pocock",
+    "url": "https://github.com/mattpocock"
+  },
+  "homepage": "https://github.com/mattpocock/skills",
+  "keywords": [
+    "handoff",
+    "session",
+    "context"
+  ]
+}

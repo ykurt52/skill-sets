@@ -1,0 +1,16 @@
+{
+  "name": "writing-for-agents",
+  "version": "1.3.2",
+  "description": "Reference for writing documents agents read: skills, CLAUDE.md and AGENTS.md.",
+  "license": "MIT",
+  "author": {
+    "name": "Matt Pocock",
+    "url": "https://github.com/mattpocock"
+  },
+  "homepage": "https://github.com/mattpocock/skills",
+  "keywords": [
+    "skills",
+    "claude-md",
+    "writing"
+  ]
+}

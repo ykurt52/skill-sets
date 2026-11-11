@@ -1,7 +1,8 @@
 # skill-sets
 
-Claude Code skills for hardware, firmware and FPGA work. Each skill is
-packaged as its own plugin, so you install only the ones you need.
+Claude Code skills for hardware work, a git guardrail hook, and a small set
+of general skills from mattpocock/skills. Each skill is packaged as its own
+plugin, so you install only the ones you need.
 
 ## Skills
 
@@ -12,6 +13,24 @@ packaged as its own plugin, so you install only the ones you need.
 | [emc-precheck](plugins/hardware/emc-precheck/README.md) | hardware | Port protection pre-check with a board view, plus surge, burst and ESD pulse simulation |
 | [pcb-review](plugins/hardware/pcb-review/README.md) | hardware | Layout review: decoupling, pairs, reference planes, isolation, with an HTML board view |
 | [hw-notes](plugins/hardware/hw-notes/README.md) | hardware | Bilingual commit messages and Redmine descriptions for Altium repos |
+| [git-guardrails](plugins/tooling/git-guardrails/README.md) | tooling | Hook that lets the agent run read-only git commands only |
+
+### From mattpocock/skills
+
+General skills picked from [mattpocock/skills](https://github.com/mattpocock/skills)
+(MIT). Each README lists any change from upstream.
+
+| Plugin | Category | What it does |
+| --- | --- | --- |
+| [grilling](plugins/mattpocock/grilling/README.md) | productivity | Stress-tests a plan in rounds of questions with recommended answers |
+| [handoff](plugins/mattpocock/handoff/README.md) | productivity | Writes a handoff document so a fresh session can continue |
+| [writing-for-agents](plugins/mattpocock/writing-for-agents/README.md) | productivity | Reference for writing skills, CLAUDE.md and AGENTS.md |
+| [wait-what](plugins/mattpocock/wait-what/README.md) | productivity | Makes the agent re-explain its last answer in plain words |
+| [to-questionnaire](plugins/mattpocock/to-questionnaire/README.md) | productivity | Turns an open decision into a questionnaire for someone else |
+| [diagnosing-bugs](plugins/mattpocock/diagnosing-bugs/README.md) | engineering | Reproduce, hypothesise, measure, fix loop for hard bugs |
+| [research](plugins/mattpocock/research/README.md) | engineering | Researches primary sources in a background agent, saves a cited note |
+| [code-review](plugins/mattpocock/code-review/README.md) | engineering | Reviews a diff against coding standards and the originating spec |
+| [codebase-design](plugins/mattpocock/codebase-design/README.md) | engineering | Vocabulary and checks for deep module design |
 
 ## Install
 
@@ -70,13 +89,16 @@ A skill runs as `/<plugin>:<skill>`, for example `/hw-notes:hw-notes`.
 ```
 .claude-plugin/marketplace.json     list of all plugins
 plugins/
-  <category>/                       hardware, firmware, fpga, ...
+  <category>/                       hardware, tooling, ...
     <plugin>/
       .claude-plugin/plugin.json    plugin manifest
       README.md                     what it does, how to run it
       skills/<skill>/
         SKILL.md
         scripts/, styles/, ...      files used only by this skill
+      hooks/                        hook plugins only
+  mattpocock/                       skills taken from mattpocock/skills
+    LICENSE                         upstream MIT license
 ```
 
 Rules:

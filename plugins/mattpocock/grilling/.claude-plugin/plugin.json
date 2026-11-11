@@ -1,0 +1,16 @@
+{
+  "name": "grilling",
+  "version": "1.3.2",
+  "description": "Interview that stress-tests a plan or design in numbered rounds, each question with a recommended answer, until nothing is left assumed.",
+  "license": "MIT",
+  "author": {
+    "name": "Matt Pocock",
+    "url": "https://github.com/mattpocock"
+  },
+  "homepage": "https://github.com/mattpocock/skills",
+  "keywords": [
+    "planning",
+    "design",
+    "interview"
+  ]
+}
