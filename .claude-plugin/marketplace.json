@@ -1,0 +1,46 @@
+{
+  "name": "skill-sets",
+  "owner": {
+    "name": "ykurt52"
+  },
+  "metadata": {
+    "description": "Engineering skills for hardware, firmware and FPGA work. Each skill is a separate plugin."
+  },
+  "plugins": [
+    {
+      "name": "hw-read",
+      "source": "./plugins/hardware/hw-read",
+      "description": "Read a KiCad or Altium hardware project from its project files into structured JSON: parts, nets, rules, stackup and layout geometry.",
+      "category": "hardware",
+      "tags": ["kicad", "altium", "netlist", "pcb", "schematic"]
+    },
+    {
+      "name": "sch-review",
+      "source": "./plugins/hardware/sch-review",
+      "description": "Schematic review for KiCad and Altium projects: mechanical netlist checks plus a datasheet pass per IC. Needs hw-read.",
+      "category": "hardware",
+      "tags": ["schematic", "review", "kicad", "altium", "datasheet"]
+    },
+    {
+      "name": "emc-precheck",
+      "source": "./plugins/hardware/emc-precheck",
+      "description": "Port protection pre-check for KiCad and Altium boards: clamps, their ratings and placement, an HTML board view, and surge, burst and ESD pulse simulation of a port. Needs hw-read.",
+      "category": "hardware",
+      "tags": ["emc", "esd", "surge", "tvs", "kicad", "altium"]
+    },
+    {
+      "name": "pcb-review",
+      "source": "./plugins/hardware/pcb-review",
+      "description": "Layout review for KiCad and Altium boards: decoupling distance, differential pairs, reference planes, dangling tracks, edge and isolation distances, with an HTML board view. Needs hw-read.",
+      "category": "hardware",
+      "tags": ["pcb", "layout", "review", "isolation", "kicad", "altium"]
+    },
+    {
+      "name": "hw-notes",
+      "source": "./plugins/hardware/hw-notes",
+      "description": "Bilingual (EN/TR) commit messages and Redmine descriptions for Altium hardware repos, with work hour estimate.",
+      "category": "hardware",
+      "tags": ["altium", "commit", "redmine"]
+    }
+  ]
+}

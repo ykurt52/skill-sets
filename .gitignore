@@ -1,0 +1,5 @@
+samples/
+__pycache__/
+.hwread/
+.claude/launch.json
+.claude/settings.local.json

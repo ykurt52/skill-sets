@@ -1,0 +1,10 @@
+{
+  "name": "emc-precheck",
+  "version": "0.2.0",
+  "description": "Port protection pre-check for KiCad and Altium boards: clamps, their ratings and placement, an HTML board view, and surge, burst and ESD pulse simulation of a port. Needs hw-read.",
+  "license": "MIT",
+  "author": {
+    "name": "ykurt52"
+  },
+  "keywords": ["emc", "esd", "surge", "tvs", "kicad", "altium"]
+}

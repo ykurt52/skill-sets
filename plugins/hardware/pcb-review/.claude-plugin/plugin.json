@@ -1,0 +1,10 @@
+{
+  "name": "pcb-review",
+  "version": "0.1.0",
+  "description": "Layout review for KiCad and Altium boards: decoupling distance, differential pairs, reference planes, dangling tracks, edge and isolation distances, with an HTML board view. Needs hw-read.",
+  "license": "MIT",
+  "author": {
+    "name": "ykurt52"
+  },
+  "keywords": ["pcb", "layout", "review", "isolation", "kicad", "altium"]
+}

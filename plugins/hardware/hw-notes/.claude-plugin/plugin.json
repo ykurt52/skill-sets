@@ -1,0 +1,10 @@
+{
+  "name": "hw-notes",
+  "version": "1.0.0",
+  "description": "Bilingual (EN/TR) commit messages and Redmine descriptions for Altium hardware repos, with work hour estimate.",
+  "license": "MIT",
+  "author": {
+    "name": "ykurt52"
+  },
+  "keywords": ["altium", "hardware", "commit", "redmine"]
+}

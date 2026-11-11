@@ -1,0 +1,10 @@
+{
+  "name": "sch-review",
+  "version": "0.1.0",
+  "description": "Schematic review for KiCad and Altium projects: mechanical netlist checks plus a datasheet pass per IC. Needs hw-read.",
+  "license": "MIT",
+  "author": {
+    "name": "ykurt52"
+  },
+  "keywords": ["schematic", "review", "kicad", "altium", "datasheet"]
+}

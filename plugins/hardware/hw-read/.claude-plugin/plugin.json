@@ -1,0 +1,10 @@
+{
+  "name": "hw-read",
+  "version": "0.2.0",
+  "description": "Read a KiCad or Altium hardware project from its project files into structured JSON: parts, nets, rules, stackup and layout geometry.",
+  "license": "MIT",
+  "author": {
+    "name": "ykurt52"
+  },
+  "keywords": ["kicad", "altium", "hardware", "netlist", "pcb", "schematic"]
+}
