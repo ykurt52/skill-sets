@@ -123,6 +123,11 @@ claude plugin validate .
 claude plugin validate ./plugins/<category>/<name> --strict
 ```
 
+## Support
+
+Everything here is free. If these skills save you time, you can support
+the work through [GitHub Sponsors](https://github.com/sponsors/ykurt52).
+
 ## License
 
 MIT, see [LICENSE](LICENSE).
