@@ -15,6 +15,8 @@ packaged as its own plugin, so you install only the ones you need.
 
 ## Install
 
+### Claude Code in a terminal
+
 Add the marketplace once:
 
 ```
@@ -32,6 +34,34 @@ From a local clone, use the folder path instead:
 ```
 /plugin marketplace add ./skill-sets
 ```
+
+### Claude desktop app (Code tab)
+
+The desktop plugin manager lists plugins only from marketplaces that are
+already known. Declare the marketplace and the plugins you want in
+`~/.claude/settings.json` (`%USERPROFILE%\.claude\settings.json` on
+Windows), merging with any keys already there:
+
+```json
+{
+  "extraKnownMarketplaces": {
+    "skill-sets": {
+      "source": { "source": "github", "repo": "ykurt52/skill-sets" }
+    }
+  },
+  "enabledPlugins": {
+    "hw-read@skill-sets": true,
+    "sch-review@skill-sets": true
+  }
+}
+```
+
+Start a new session. The marketplace is cloned in the background and the
+enabled plugins are installed. Manage them later under **+ > Plugins**.
+`sch-review`, `pcb-review` and `emc-precheck` need `hw-read`, so enable it
+with them.
+
+### Running a skill
 
 A skill runs as `/<plugin>:<skill>`, for example `/hw-notes:hw-notes`.
 
